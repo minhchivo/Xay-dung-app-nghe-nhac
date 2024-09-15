@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- ImageView cho hình ảnh banner -->
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitXY" />
+
+    <!-- View để tạo hiệu ứng nền -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/custom_background_banner" />
+
+    <!-- Phần nội dung bên dưới banner -->
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/imageview">
+
+        <!-- ImageView cho hình ảnh của banner -->
+        <ImageView
+            android:id="@+id/imageviewbanner"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:padding="2dp" />
+
+        <!-- TextView cho tiêu đề của banner -->
+        <TextView
+            android:id="@+id/textviewtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/imageviewbanner"
+            android:layout_marginLeft="10dp"
+            android:textColor="#FB8C00"
+            android:layout_toRightOf="@id/imageviewbanner"
+            android:text="Tình Cảm Chôn Dấu" />
+
+        <!-- Phần nội dung chi tiết của banner -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textviewtitle"
+            android:layout_toRightOf="@id/imageviewbanner"
+            android:gravity="center">
+
+            <!-- TextView cho nội dung chi tiết -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp"
+                android:maxLines="2"
+                android:text="Chào bạn đến với ca khúc mới nhất của Ca Sĩ"
+                android:textColor="#fffdfc"
+                android:textSize="13sp"
+                android:id="@+id/textviewtitledetail"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

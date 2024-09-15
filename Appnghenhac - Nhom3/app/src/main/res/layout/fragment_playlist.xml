@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textviewtitlePlayList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/arbutus"
+        android:gravity="center"
+        android:text="TOP PLAYLIST"
+        android:textColor="#000000"
+        android:background="#F5F5F5"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+    <ListView
+        android:layout_below="@id/listviewPlayList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listviewPlayList"
+        ></ListView>
+<!--    <TextView-->
+<!--        android:text="xem thêm playlist"-->
+<!--        android:layout_below="@id/textviewmoreplaylist"-->
+<!--        android:id="@+id/textviewmoreplaylist"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textColor="#0a0a0a"-->
+<!--        android:layout_marginBottom="8dp"-->
+<!--        android:paddingBottom="10dp"-->
+<!--        android:paddingTop="10dp"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:background="#c9c7c7"-->
+<!--        android:textSize="19sp"-->
+<!--        android:drawablePadding="10dp"-->
+<!--        ></TextView>-->
+</LinearLayout>

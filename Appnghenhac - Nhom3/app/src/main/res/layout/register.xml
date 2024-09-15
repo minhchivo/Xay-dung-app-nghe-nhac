@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/image1">
+
+    <TextView
+        android:id="@+id/tvRegisterTitle"
+        android:textColor="#8341f1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đăng Ký"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="24dp"/>
+
+    <EditText
+        android:background="@drawable/border"
+        android:id="@+id/etUsername"
+        android:textColorHint="#403487"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên Đăng Nhập"
+        android:inputType="text"
+        android:padding="10dp"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:background="@drawable/border"
+        android:id="@+id/etEmail"
+        android:textColorHint="#403487"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:background="@drawable/border"
+        android:id="@+id/etPassword"
+        android:textColorHint="#403487"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mật Khẩu"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:background="@drawable/border"
+        android:id="@+id/etConfirmPassword"
+        android:textColorHint="#403487"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Xác Nhận Mật Khẩu"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="480dp"
+        android:layout_height="wrap_content"
+        android:text="Đăng Ký"
+        android:layout_gravity="center"
+        android:padding="10dp"/>
+
+</LinearLayout>

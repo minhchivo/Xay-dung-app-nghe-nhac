@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:fillViewport="true"
+    android:layout_width="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearlayout"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <fragment
+            android:name="org.meiocode.a1.fragment.fragment_banner"
+            android:id="@+id/fragmentbanner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ></fragment>
+        <fragment
+            android:name="org.meiocode.a1.fragment.fragment_playlist"
+            android:id="@+id/fragmentplaylist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ></fragment>
+        <fragment
+            android:name="org.meiocode.a1.fragment.fragment_album_hot"
+            android:id="@+id/fragmentalbumhot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ></fragment>
+        <fragment
+            android:name="org.meiocode.a1.fragment.fragment_bai_hat_hot"
+            android:id="@+id/fragmentbaihathot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ></fragment>
+
+    </LinearLayout>
+
+</ScrollView>
